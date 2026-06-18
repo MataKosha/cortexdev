@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="U04o_At3WIMAFUt4GoLz1elS1joisEkTiyl2FihMgf4" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="создание сайтов астана, заказать сайт астана, разработка сайтов казахстан, заказать телеграм бота, создание бота в телеграм, купить телеграм бота, веб студия астана, создание сайтов под ключ, заказать сайт визитку, заказать лендинг, разработка сайтов цена, программист астана, услуги программиста">
     <title>Cortex Dev | Премиальная Автоматизация Бизнеса и Разработка под Ключ</title>
     <style>
@@ -927,6 +928,36 @@
             .contact-wrapper { padding: 30px 20px; }
             .custom-cursor, .custom-cursor-dot { display: none; }
         }
+
+        /* Стили для экранов смартфонов (шириной до 768px) */
+@media (max-width: 768px) {
+    /* Чтобы контент не прилипал к краям экрана телефона */
+    body {
+        padding: 10px;
+    }
+
+    /* Все крупные флекс-блоки (например, карточки услуг или портфолио) 
+       теперь будут выстраиваться вертикально, друг под другом */
+    .container, .services-grid, .portfolio-items { 
+        flex-direction: column !important;
+        grid-template-columns: 1fr !important; /* если использовал grid */
+        width: 100% !important;
+    }
+
+    /* Делаем так, чтобы картинки и блоки не вылезали за границы экрана */
+    img, div, section {
+        max-width: 100% !important;
+        box-sizing: border-box;
+    }
+
+    /* Уменьшаем слишком гигантские заголовки, чтобы они не переносились по одной букве */
+    h1 {
+        font-size: 24px !important;
+    }
+    h2 {
+        font-size: 20px !important;
+    }
+}
     </style>
 </head>
 <body>
